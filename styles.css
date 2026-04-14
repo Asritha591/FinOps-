@@ -101,8 +101,8 @@ body {
     height: 40px;
     background-color: #0067b8; /* ✅ true blue */
     color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
