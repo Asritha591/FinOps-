@@ -54,11 +54,24 @@
   </a>
 
 
-<a href="assets/FinOps Required Input Fields.zip"
-   download
-   class="btn primary">
+<a href="assets/FinOps Required Input Fields.docx"
+   class="btn primary"
+   onclick="forceDownload(event)">
   FinOps Governance Working SOP
 </a>
+ 
+<script>
+function forceDownload(e) {
+  e.preventDefault();
+  const link = document.createElement("a");
+  link.href = "assets/FinOps Required Input Fields.docx";
+  link.download = "FinOps Required Input Fields.docx";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
+ 
   </div>
 
   <!-- RIGHT BUTTON -->
