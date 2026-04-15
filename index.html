@@ -46,23 +46,11 @@
   <div class="left-group">
     <a href="https://dxcportal.sharepoint.com/sites/HybridCloud-ClientSuccessCapability/Lists/FinOpsGovernanceDataTracker/AllItems.aspx" class="header-btn">FinOps Governance Data Tracker</a>
 
-<a href="assets/FinOps Required Input Fields.docx"
-   class="btn primary"
-   onclick="forceDownload(event)">
+<a href="assets/FinOps Required Input Fields.zip"
+   download
+   class="btn primary">
   FinOps Governance Working SOP
 </a>
-
-<script>
-function forceDownload(e) {
-  e.preventDefault();
-  const link = document.createElement("a");
-  link.href = "assets/FinOps Required Input Fields.docx";
-  link.download = "FinOps Required Input Fields.docx";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-</script>
   </div>
 
   <!-- RIGHT BUTTON -->
