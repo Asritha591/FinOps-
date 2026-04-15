@@ -46,11 +46,23 @@
   <div class="left-group">
     <a href="https://dxcportal.sharepoint.com/sites/HybridCloud-ClientSuccessCapability/Lists/FinOpsGovernanceDataTracker/AllItems.aspx" class="header-btn">FinOps Governance Data Tracker</a>
 
-<a href="assets/FinOps_Governance.zip"
-   download
-   class="btn primary">
-  Download FinOps Governance File
+<a href="assets/FinOps_Governance.docx"
+   class="btn primary"
+   onclick="forceDownload(event)">
+  FinOps Governance Working SOP
 </a>
+
+<script>
+function forceDownload(e) {
+  e.preventDefault();
+  const link = document.createElement("a");
+  link.href = "assets/FinOps_Governance.docx";
+  link.download = "FinOps_Governance.docx";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
   </div>
 
   <!-- RIGHT BUTTON -->
